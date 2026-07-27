@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAF7F2"/>
+      <stop offset="100%" style="stop-color:#F5EDE4"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4B88A"/>
+      <stop offset="50%" style="stop-color:#C9A876"/>
+      <stop offset="100%" style="stop-color:#B8956A"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" fill="url(#bg)" rx="38"/>
+  <g transform="translate(90, 90)">
+    <path d="M-42,-32 Q-28,-50 -9,-46 Q0,-44 0,-32 L0,32 Q0,44 -9,46 Q-28,50 -42,32 Q-52,18 -42,0 Q-52,-18 -42,-32 Z"
+          fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.9"/>
+    <path d="M42,-32 Q28,-50 9,-46 Q0,-44 0,-32 L0,32 Q0,44 9,46 Q28,50 42,32 Q52,18 42,0 Q52,-18 42,-32 Z"
+          fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.9"/>
+    <path d="M-18,-9 Q0,-18 18,-9 Q25,-5 23,4 Q20,14 0,17 Q-20,14 -23,4 Q-25,-5 -18,-9 Z"
+          fill="url(#gold)" opacity="0.15"/>
+    <path d="M-18,-9 Q0,-18 18,-9 Q25,-5 23,4 Q20,14 0,17 Q-20,14 -23,4 Q-25,-5 -18,-9 Z"
+          fill="none" stroke="url(#gold)" stroke-width="1.4"/>
+    <circle cx="-35" cy="-20" r="2.8" fill="url(#gold)" opacity="0.8"/>
+    <circle cx="35" cy="-20" r="2.8" fill="url(#gold)" opacity="0.8"/>
+    <circle cx="-35" cy="20" r="2.8" fill="url(#gold)" opacity="0.8"/>
+    <circle cx="35" cy="20" r="2.8" fill="url(#gold)" opacity="0.8"/>
+    <text x="0" y="54" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="13" fill="#C9A876" letter-spacing="1.2">Maison Vie</text>
+  </g>
+</svg>
