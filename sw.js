@@ -1,4 +1,4 @@
-const CACHE_NAME = 'maison-vie-v1';
+const CACHE_NAME = 'maison-vie-v2';
 const PRECACHE_URLS = [
   './',
   './index.html',
@@ -32,13 +32,20 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
 
   if (request.mode === 'navigate') {
+    // 导航请求优先走网络，确保拿到最新 index.html
     event.respondWith(
-      caches.match('./index.html')
-        .then((cached) => cached || fetch(request).catch(() => caches.match('./index.html')))
+      fetch(request)
+        .then((response) => {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put('./index.html', clone));
+          return response;
+        })
+        .catch(() => caches.match('./index.html'))
     );
     return;
   }
 
+  // 静态资源：缓存优先，后台更新
   event.respondWith(
     caches.match(request)
       .then((cached) => {
