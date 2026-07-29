@@ -1,4 +1,4 @@
-const CACHE_NAME = 'maison-vie-v3';
+const CACHE_NAME = 'maison-vie-v5';
 const PRECACHE_URLS = [
   './',
   './index.html',
